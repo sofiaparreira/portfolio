@@ -107,13 +107,13 @@ function App() {
                 data={"Junho de 2024 - hoje"}
                 firstDescription={"Criação do site da empresa para divulgação"}
                 secondDescription={"Desenvolvimento de aplicativo mobile em Kotlin, voltado para profissionais de campo no processo de geoprocessamento de dados. O aplicativo inclui integração com a API do Google Maps para facilitar a navegação e coleta de dados geográficos em tempo real. Além disso, foi implementada uma estrutura de banco de dados com controle de acesso, respeitando a hierarquia de usuários, garantindo segurança e eficiência na gestão dos dados coletados. "}
-                thirdDescription={"Criacao de pequenos projetos web para melhorar e facilitar o trabalho dos analistas de geoprocessamento"}
+                thirdDescription={"Criação de pequenos projetos web para melhorar e facilitar o trabalho dos analistas de geoprocessamento"}
               />
 
               <CardExperience
                 cargo={"Assistência Técnica"}
                 empresa={"Info Brasil Express (Presencial)"}
-                data={"Janeiro de 2024 - Junho de 2024"}
+                data={"Janeiro de 2024 - Junho de 2024 (6 meses)"}
                 firstDescription={"Criação do site da empresa para divulgação"}
                 secondDescription={"Desenvolvimento de aplicativo mobile em Kotlin, voltado para profissionais de campo no processo de geoprocessamento de dados. O aplicativo inclui integração com a API do Google Maps para facilitar a navegação e coleta de dados geográficos em tempo real. Além disso, foi implementada uma estrutura de banco de dados com controle de acesso, respeitando a hierarquia de usuários, garantindo segurança e eficiência na gestão dos dados coletados. "}
                 thirdDescription={"Criacao de pequenos projetos web para melhorar e facilitar o trabalho dos analistas de geoprocessamento"}
@@ -131,15 +131,15 @@ function App() {
             <CardProject title={"Lógus"} github={"https://github.com/smViana19/logus-app-react"} description={"Sistema web em React para projeto escolar feito em grupo. Focado na gestão de administradores da escola, professores e alunos, o sistema permite gerenciar notas, calcular médias e acompanhar o desempenho por meio de gráficos detalhados. Professores postam atividades e materiais, enquanto os alunos acessam o conteúdo e interagem diretamente com os professores. O app também oferece ferramentas para ajudar nos estudos, como o método pomodoro e uma agenda para organizar tarefas."} />
 
             <CardProject title={"Lógus - API REST"} github={"https://github.com/smViana19/API-REST-LOGUS"} description={"Sistema web em React para projeto escolar feito em grupo. Focado na gestão de administradores da escola, professores e alunos, o sistema permite gerenciar notas, calcular médias e acompanhar o desempenho por meio de gráficos detalhados. Professores postam atividades e materiais, enquanto os alunos acessam o conteúdo e interagem diretamente com os professores. O app também oferece ferramentas para ajudar nos estudos, como o método pomodoro e uma agenda para organizar tarefas."} />
-            
-            <CardProject 
-              link={"https://rock-paper-scissor-kappa-sage.vercel.app"} 
-              github={"https://github.com/sofiaparreira/rock-paper-scissor"}  
-              title={"Rock Paper or Scissor - Game"} 
-              description={"Projeto acadêmico em React: um jogo de Pedra, Papel ou Tesoura onde o jogador pode desafiar a máquina quantas vezes quiser. Com uma jogabilidade simples e divertida."} 
+
+            <CardProject
+              link={"https://rock-paper-scissor-kappa-sage.vercel.app"}
+              github={"https://github.com/sofiaparreira/rock-paper-scissor"}
+              title={"Rock Paper or Scissor - Game"}
+              description={"Projeto acadêmico em React: um jogo de Pedra, Papel ou Tesoura onde o jogador pode desafiar a máquina quantas vezes quiser. Com uma jogabilidade simples e divertida."}
             />
 
-            <CardProject link={"https://books-api-theta.vercel.app"} github={"https://github.com/sofiaparreira/books-api"}  title={"Books-API"} description={"Projeto acadêmico em React: uma lista de livros conectada a um JSON para estudar o uso da Fetch API. O projeto permite que os usuários acessem e visualizem informações sobre livros de maneira dinâmica."}
+            <CardProject link={"https://books-api-theta.vercel.app"} github={"https://github.com/sofiaparreira/books-api"} title={"Books-API"} description={"Projeto acadêmico em React: uma lista de livros conectada a um JSON para estudar o uso da Fetch API. O projeto permite que os usuários acessem e visualizem informações sobre livros de maneira dinâmica."}
             />
 
 
@@ -147,8 +147,18 @@ function App() {
             }
             />
 
+            <CardProject 
+              link={"https://workgeo.com.br"} 
+              github={"https://github.com/sofiaparreira/AgendaCrud-Laravel"} 
+              title={"Agenda - CRUD"} 
+              description={"Projeto acadêmico: agenda para organização de projetos feito em Laravel. O objetivo do projeto foi aprender e estudar CRUD "
+            }
+            />
 
-<CardProject title={"Aplicativo Workgeo"} description={"Projeto Kotlin Em Andamento..."
+
+
+
+            <CardProject title={"Aplicativo WorkGeo"} description={"Projeto Kotlin Em Andamento..."
             }
             />
 
