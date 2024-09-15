@@ -18,6 +18,8 @@ import cssIcon from "./assets/icons/css.png";
 import figmaIcon from "./assets/icons/figma.png";
 import githubIcon from "./assets/icons/github.png";
 import nextIcon from "./assets/icons/next.png";
+import { Line } from "./components/Line";
+import CardExperience from "./components/CardExperience";
 
 
 
@@ -27,37 +29,37 @@ function App() {
     <div className="bg-gray-50">
       /* Componentizar a NAV */
       <nav className="py-4 fixed top-0 w-full bg-gray-50 ">
-        <ul className="flex gap-8 justify-center items-center">
-          <li className="flex items-center gap-2 hover:bg-gray-200 p-2 rounded">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="14"
-              width="15.75"
-              viewBox="0 0 576 512"
-            >
-              <path
-                className="fill-[#E5E7EB] hover:fill-white"
-                d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-              />
-            </svg>
-            <span>Início</span>
-          </li>
-          <li className="hover:bg-gray-200 p-2 rounded">Habilidades</li>
-          <li className="hover:bg-gray-200 p-2 rounded">Experiências</li>
-          <li className="hover:bg-gray-200 p-2 rounded">Projetos</li>
+        <ul className="flex gap-4 justify-center items-center">
+        <li className="flex items-center gap-2 hover:bg-gray-200 p-2 rounded cursor-pointer group">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="14"
+    width="15.75"
+    viewBox="0 0 576 512"
+    className="transition-all duration-300 fill-gray-400 group-hover:fill-white"
+  >
+    <path
+      d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+    />
+  </svg>
+</li>
+
+          <li className="hover:bg-gray-200 py-1 px-2 rounded-md cursor-pointer">Habilidades</li>
+          <li className="hover:bg-gray-200 py-1 px-2 rounded-md cursor-pointer">Experiências</li>
+          <li className="hover:bg-gray-200 py-1 px-2 rounded-md cursor-pointer">Projetos</li>
         </ul>
       </nav>
-      <main className="px-96">
+      <main className="xl:px-96 px-48">
         <section className="flex items-center justify-center h-screen">
           <CardAboutMe />
         </section>
 
-        <hr className="w-full h-0.5 bg-gray-300 mb-12" />
+        <Line />
 
-        <section>
-          <Title text={""} />
+        <section className="mb-16">
+          <Title text={"Skills"} />
 
-          <div className="grid grid-cols-5 gap-8  justify-center">
+          <div className="grid xl:grid-cols-5 grid-cols-4 gap-8  justify-center">
             <CardSkill src={htmlIcon} text={"HTML"} />
             <CardSkill src={cssIcon} text={"CSS"} />
             <CardSkill src={jsIcon} text={"JavaScript"} />
@@ -68,13 +70,49 @@ function App() {
             <CardSkill src={reactIcon} text={"React Native"} />
             <CardSkill src={swiftIcon} text={"Swift"} />
             <CardSkill src={kotlinIcon} text={"Kotlin"} />
-			<CardSkill src={figmaIcon} text={"Figma"}/>
-			<CardSkill src={githubIcon} text={"GitHub"}/>
-			<CardSkill src={figmaIcon} text={"Postman"}/>
-			<CardSkill src={figmaIcon} text={"Tailwind"}/>
-			<CardSkill src={figmaIcon} text={"Bootstrap"}/>
+			      <CardSkill src={figmaIcon} text={"Figma"}/>
+			      <CardSkill src={githubIcon} text={"GitHub"}/>
+			      <CardSkill src={figmaIcon} text={"Postman"}/>
+			      <CardSkill src={figmaIcon} text={"Tailwind"}/>
+			      <CardSkill src={figmaIcon} text={"Bootstrap"}/>
 
           </div>
+        </section>
+
+        <Line />
+
+        <section>
+          <Title text={"Experience"} />
+
+          <div className="flex gap-8">
+            <hr className="h-screen w-1 bg-[#986DFF]" />
+
+          <div>
+            <CardExperience
+              cargo={"Web and Mobile Developer"}
+              empresa={"WorkGeo (Remoto)"}
+              data={"Junho de 2024 - hoje"}
+              firstDescription={"Criação do site da empresa para divulgação"}
+              secondDescription={"Desenvolvimento de aplicativo mobile em Kotlin, voltado para profissionais de campo no processo de geoprocessamento de dados. O aplicativo inclui integração com a API do Google Maps para facilitar a navegação e coleta de dados geográficos em tempo real. Além disso, foi implementada uma estrutura de banco de dados com controle de acesso, respeitando a hierarquia de usuários, garantindo segurança e eficiência na gestão dos dados coletados. "}
+              thirdDescription={"Criacao de pequenos projetos web para melhorar e facilitar o trabalho dos analistas de geoprocessamento"}
+            />
+            
+            <CardExperience
+              cargo={"Assistência Técnica"}
+              empresa={"Info Brasil Express (Presencial)"}
+              data={"Janeiro de 2024 - Junho de 2024"}
+              firstDescription={"Criação do site da empresa para divulgação"}
+              secondDescription={"Desenvolvimento de aplicativo mobile em Kotlin, voltado para profissionais de campo no processo de geoprocessamento de dados. O aplicativo inclui integração com a API do Google Maps para facilitar a navegação e coleta de dados geográficos em tempo real. Além disso, foi implementada uma estrutura de banco de dados com controle de acesso, respeitando a hierarquia de usuários, garantindo segurança e eficiência na gestão dos dados coletados. "}
+              thirdDescription={"Criacao de pequenos projetos web para melhorar e facilitar o trabalho dos analistas de geoprocessamento"}
+            />
+          </div>
+</div>
+
+        </section>
+
+        <section className="mt-16">
+          <Title text={"Projects"} />
+
         </section>
       </main>
     </div>
