@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardExperience = ({cargo, empresa, data, firstDescription, secondDescription, thirdDescription }) => {
   return (
-    <div className="mb-16">
+    <div className="mb-28">
               <h2 className="text-gray-700 font-semibold text-lg mb-4">{cargo}</h2>
               <p>{empresa}</p>
               <p className="text-sm">{data}</p>
