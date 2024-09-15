@@ -3,6 +3,10 @@ import "./App.css";
 import CardAboutMe from "./components/CardAboutMe";
 import Title from "./components/Title";
 import CardSkill from "./components/CardSkill";
+import { Line } from "./components/Line";
+import CardExperience from "./components/CardExperience";
+import CardProject from "./components/CardProject";
+
 
 //ICONS SKILLS
 import jsIcon from "./assets/icons/js.png";
@@ -18,9 +22,9 @@ import cssIcon from "./assets/icons/css.png";
 import figmaIcon from "./assets/icons/figma.png";
 import githubIcon from "./assets/icons/github.png";
 import nextIcon from "./assets/icons/next.png";
-import { Line } from "./components/Line";
-import CardExperience from "./components/CardExperience";
-import CardProject from "./components/CardProject";
+import laravelIcon from './assets/icons/laravel.png'
+
+
 
 
 
@@ -77,7 +81,7 @@ function App() {
             <CardSkill src={reactIcon} text={"React Native"} />
             <CardSkill src={swiftIcon} text={"Swift"} />
             <CardSkill src={kotlinIcon} text={"Kotlin"} />
-            <CardSkill src={figmaIcon} text={"Laravel"} />
+            <CardSkill src={laravelIcon} text={"Laravel"} />
 
             <CardSkill src={figmaIcon} text={"Figma"} />
             <CardSkill src={githubIcon} text={"GitHub"} />
@@ -126,7 +130,7 @@ function App() {
         <section className="mt-16">
           <Title text={"Projects"} />
 
-          <div className="grid grid-cols-2 gap-4 mb-16">
+          <div className="grid grid-cols-3 max-xl:grid-cols-2 gap-4 mb-16">
 
             <CardProject title={"Lógus"} github={"https://github.com/smViana19/logus-app-react"} description={"Sistema web em React para projeto escolar feito em grupo. Focado na gestão de administradores da escola, professores e alunos, o sistema permite gerenciar notas, calcular médias e acompanhar o desempenho por meio de gráficos detalhados. Professores postam atividades e materiais, enquanto os alunos acessam o conteúdo e interagem diretamente com os professores. O app também oferece ferramentas para ajudar nos estudos, como o método pomodoro e uma agenda para organizar tarefas."} />
 
@@ -169,6 +173,8 @@ function App() {
         </section>
 
         <Line />
+
+		<p className="text-center text-gray-600 font-semibold mb-8">© 2024 Sofia Passos</p>
 
 
       </main>

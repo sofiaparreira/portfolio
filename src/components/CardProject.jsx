@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardProject = ({ title, description, link, github }) => {
   return (
-    <div className='border cursor-pointer border-gray-200 hover:border-[#986DFF] transition-all duration-300 rounded-lg group px-4 py-4 bg-white shadow shadow-gray-200 text-gray-700'>
+    <div className='border cursor-pointer  border-gray-200 hover:border-[#986DFF] transition-all duration-300 rounded-lg group px-4 py-4 bg-white shadow shadow-gray-200 text-gray-700'>
       <div className='flex justify-between mb-4'>
         <h1 className='text-lg font-semibold mb-2'>{title}</h1>
         <svg className='rotate-45 group-hover:scale-125 transition-all duration-300' xmlns="http://www.w3.org/2000/svg" height="14" width="10.5" viewBox="0 0 384 512">
